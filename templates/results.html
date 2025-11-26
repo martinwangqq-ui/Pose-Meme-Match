@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+</head>
+<body style="font-family:sans-serif;">
+  <h2>Matching finished</h2>
+  <p><b>The most compatible meme：</b> {{ result.match_name }}</p>
+
+  <h3>Your photo：</h3>
+  <img src="{{ result.user_image }}" width="300">
+
+  <h3>Meme：</h3>
+  <img src="/static/memes/{{ result.match_name }}" width="300">
+</body>
+</html>
